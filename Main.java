@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) throws Exception {
         for (int c = 1; c <= 100; c++) {
-            System.out.format("\b->",c);
+            System.out.print("\b->");
             Thread.sleep(350);
         }
     }
