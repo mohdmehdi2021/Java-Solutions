@@ -1,0 +1,19 @@
+import ... ...
+public class Files_01 {
+    public static void main(String[] args) throws Exception{
+        File myVideo = new File("C:\\Users\\abbas\\Desktop\\java\\JavaZeroToHero\\Java0to100\\src\\");
+        listAllFiles(myVideo);
+
+    }
+    static void listAllFiles(File file) throws Exception{
+        File[] files = file.listFiles();
+        for (File elem: files) {
+            if (elem.isFile()){
+                System.out.println(elem);
+            }else {
+                listAllFiles(elem.getAbsoluteFile());
+            }
+        }
+    }
+    
+   copied for future reference, by: https://www.youtube.com/watch?v=PmxDLhFRasA&t=235s
